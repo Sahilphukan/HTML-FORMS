@@ -1,0 +1,234 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Spotify Clone
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #FFFFFF;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #1DB954;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .navbar .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .nav-links a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #000000;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .sidebar a {
+            color: #B3B3B3;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .sidebar a:hover {
+            color: #FFFFFF;
+        }
+        .main-content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+        .playlist {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .playlist-item {
+            background-color: #181818;
+            padding: 20px;
+            border-radius: 8px;
+            width: 200px;
+            text-align: center;
+        }
+        .playlist-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .playlist-item h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .playlist-item p {
+            font-size: 14px;
+            color: #B3B3B3;
+        }
+        .footer {
+            background-color: #282828;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer .controls {
+            display: flex;
+            gap: 20px;
+        }
+        .footer .controls i {
+            font-size: 24px;
+            color: #B3B3B3;
+        }
+        .footer .controls i:hover {
+            color: #FFFFFF;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="navbar">
+   <div class="logo">
+    Spotify
+   </div>
+   <div class="nav-links">
+    <a href="#">
+     Premium
+    </a>
+    <a href="#">
+     Support
+    </a>
+    <a href="#">
+     Download
+    </a>
+    <a href="#">
+     Sign Up
+    </a>
+    <a href="#">
+     Log In
+    </a>
+   </div>
+  </div>
+  <div class="sidebar">
+   <a href="#">
+    <i class="fas fa-home">
+    </i>
+    Home
+   </a>
+   <a href="#">
+    <i class="fas fa-search">
+    </i>
+    Search
+   </a>
+   <a href="#">
+    <i class="fas fa-book">
+    </i>
+    Your Library
+   </a>
+   <a href="#">
+    <i class="fas fa-plus-square">
+    </i>
+    Create Playlist
+   </a>
+   <a href="#">
+    <i class="fas fa-heart">
+    </i>
+    Liked Songs
+   </a>
+  </div>
+  <div class="main-content">
+   <h1>
+    Good Evening
+   </h1>
+   <div class="playlist">
+    <div class="playlist-item">
+     <img alt="Album cover with abstract art" height="200" src="https://storage.googleapis.com/a1aa/image/eMJ6kkbQGGR4VadyaDMjkgv1Cx5BL9LT2Yx0UMrjj2NmPz3JA.jpg" width="200"/>
+     <h3>
+      Playlist 1
+     </h3>
+     <p>
+      Artist 1
+     </p>
+    </div>
+    <div class="playlist-item">
+     <img alt="Album cover with a scenic landscape" height="200" src="https://storage.googleapis.com/a1aa/image/J9ep9XEkzcxKESPmUa9M9HzaW5CBMDhsXwawj4pM4SCoPz3JA.jpg" width="200"/>
+     <h3>
+      Playlist 2
+     </h3>
+     <p>
+      Artist 2
+     </p>
+    </div>
+    <div class="playlist-item">
+     <img alt="Album cover with a city skyline" height="200" src="https://storage.googleapis.com/a1aa/image/QwYF1PL7s6LKHNjXJC5PKVntR6qtVfiLHm5g2q44jh3pPz3JA.jpg" width="200"/>
+     <h3>
+      Playlist 3
+     </h3>
+     <p>
+      Artist 3
+     </p>
+    </div>
+    <div class="playlist-item">
+     <img alt="Album cover with a colorful geometric pattern" height="200" src="https://storage.googleapis.com/a1aa/image/5KNadk5xcE7HD9ZYZpYBr9O406DD8Wqbkawxk4vl4oenPz3JA.jpg" width="200"/>
+     <h3>
+      Playlist 4
+     </h3>
+     <p>
+      Artist 4
+     </p>
+    </div>
+    <div class="playlist-item">
+     <img alt="Album cover with a black and white portrait" height="200" src="https://storage.googleapis.com/a1aa/image/JTeITsYowxzMG6s0hzpnYNX9pEoFnEs3PCIWvPmkWvXpPz3JA.jpg" width="200"/>
+     <h3>
+      Playlist 5
+     </h3>
+     <p>
+      Artist 5
+     </p>
+    </div>
+    <div class="playlist-item">
+     <img alt="Album cover with a vibrant abstract painting" height="200" src="https://storage.googleapis.com/a1aa/image/JaBFcfmMEp2UFSU4aSSakaFDCyTepfdZsPebXvgtvQT58ZedC.jpg" width="200"/>
+     <h3>
+      Playlist 6
+     </h3>
+     <p>
+      Artist 6
+     </p>
+    </div>
+   </div>
+  </div>
+  <div class="footer">
+   <div class="controls">
+    <i class="fas fa-step-backward">
+    </i>
+    <i class="fas fa-play">
+    </i>
+    <i class="fas fa-step-forward">
+    </i>
+   </div>
+   <div class="volume">
+    <i class="fas fa-volume-up">
+    </i>
+   </div>
+  </div>
+ </body>
+</html>
